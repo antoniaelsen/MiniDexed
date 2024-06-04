@@ -46,4 +46,4 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
-          bash ./upload.sh ./${{env.PROJECT_NAME}}*.zip
+          bash ./upload.sh ./build/${{env.PROJECT_NAME}}*.zip
