@@ -26,7 +26,8 @@ fi
 if [ ! -f tmp/gcc-arm-*-*.tar.xz ]; then
   echo "  Downloading toolchain..."
   wget -q -P tmp ${URL}
-  tar -xf tmp/gcc-arm-*-*.tar.xz -C ${DEST} --strip-components 1
 fi
+
+tar -xf tmp/gcc-arm-*-*.tar.xz -C ${DEST} --strip-components 1
 
 echo "  Done."
